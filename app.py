@@ -267,7 +267,7 @@ def innerQuest(cagry,cuuid):
         print(prompt)
         question="System error! Please press SKIP!"
      print(question)
-     userq.clear_user_questions(cuuid)
+     # userq.clear_user_questions(cuuid)
      userq.add_user_question(cuuid,question)
      qnum=1
      return render_template('InnerQuest Qs.html', question=question,category=cagry,client_uuid=cuuid,qnum=str(qnum))
