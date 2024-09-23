@@ -1,8 +1,9 @@
 {
+  "version": 2,
   "builds": [
-    { "src": "wsgi.py", "use": "@vercel/python", "config": { "runtime": "python3.10.6" }}
+    { "src": "app.py", "use": "@vercel/python", "config": { "runtime": "python3.11" }}
   ],
   "routes": [
-    { "src": "/(.*)", "dest": "wsgi.py" }
+    { "src": "/(.*)", "dest": "app.py" }
   ]
 }
